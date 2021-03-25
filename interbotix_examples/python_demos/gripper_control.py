@@ -7,7 +7,7 @@ from interbotix_descriptions import interbotix_mr_descriptions as mrd
 # Then change to this directory and type 'python gripper_control.py'
 
 def main():
-    arm = InterbotixRobot(robot_name="wx200", mrd=mrd)
+    arm = InterbotixRobot(robot_name="vx300s", mrd=mrd)
     arm.close_gripper(2.0)
     arm.open_gripper(2.0)
     arm.set_gripper_pressure(1.0)

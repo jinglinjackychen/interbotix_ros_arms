@@ -128,7 +128,7 @@
   <joint name="elbow" type="revolute">
     <axis xyz="0 1 0"/>
     <limit effort="100" lower="${radians(-92)}" upper="${radians(101)}" velocity="${pi}"/>
-    <origin rpy="${pi} 0 0" xyz="0.05955 0 0.3"/>
+    <origin rpy="${pi} 0 0" xyz="0.05955 0 0.18"/>
     <parent link="$(arg robot_name)/upper_arm_link"/>
     <child link="$(arg robot_name)/upper_forearm_link"/>
   </joint>
@@ -167,7 +167,7 @@
   <joint name="forearm_roll" type="revolute">
     <axis xyz="1 0 0"/>
     <limit effort="100" lower="${radians(-180)}" upper="${radians(180)}" velocity="${pi}"/>
-    <origin rpy="0 0 0" xyz="0.2 0 0"/>
+    <origin rpy="0 0 0" xyz="0.15 0 0"/>
     <parent link="$(arg robot_name)/upper_forearm_link"/>
     <child link="$(arg robot_name)/lower_forearm_link"/>
   </joint>

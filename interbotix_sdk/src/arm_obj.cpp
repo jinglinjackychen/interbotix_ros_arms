@@ -440,7 +440,7 @@ void RobotArm::arm_get_motor_configs(void)
         use_gripper = true;
     }
   }
-
+  printf("%B\n",use_gripper);
   // Now that the number of joints that need to be commanded has been figured out, create an array of
   // that size to hold the motor ids. Unfortunately, vectors cannot be used since the Robotis provided function
   // that actually commands the motors ('syncWrite') does not take them as input.
